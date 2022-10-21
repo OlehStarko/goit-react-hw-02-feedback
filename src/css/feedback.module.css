@@ -1,7 +1,6 @@
 body {
   background-color: #2de5b9;
   margin: 0;
-  padding: 50px;
 }
 
 p {
@@ -11,9 +10,21 @@ p {
 h2 {
   margin: 0;
 }
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
+}
 
 .button__box {
   display: flex;
+}
+.button__box:first-of-type {
+  margin-left: 0px;
 }
 
 button {
@@ -24,7 +35,7 @@ button {
   border-radius: 6px;
   color: #fff;
   cursor: pointer;
-  margin-left: 16px;
+
   transform: scale(1);
   transition: all 0.2s;
 }
@@ -33,9 +44,15 @@ button:hover {
   background-color: #057c61;
 }
 
+.feedback__item {
+  margin-left: 16px;
+}
+.feedback__item:first-child {
+  margin-left: 0px;
+}
+
 .feedback__container {
   width: 600px;
-  height: 500px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -47,6 +64,7 @@ button:hover {
   margin-top: 25px;
   margin-bottom: 25px;
   color: #262628;
+  font-size: 30px;
 }
 
 .feedback__element {
